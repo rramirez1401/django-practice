@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{tarea.titulo}}</h1>
+    <p>{{tarea.creacion}}</p>
+    <p>{{tarea.descripcion}}</p>
+    <p>{{tarea.importancia}}</p>
+    <p>{{tarea.fecha_cierre}}</p>
+    
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+
+        <button type="submit">actualizar tarea</button>
+
+    </form>
+
+
+</body>
+</html>
